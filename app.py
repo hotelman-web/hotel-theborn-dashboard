@@ -309,7 +309,10 @@ def chart_yearly_revenue(df_yearly):
     ), secondary_y=True)
 
     fig.update_layout(
-        **PLOTLY_LAYOUT,
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+        font=dict(family="Noto Sans KR, sans-serif", size=12, color="#333"),
+        margin=dict(l=10, r=10, t=30, b=10),
         barmode="group",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font_size=11),
         height=300,
@@ -345,7 +348,10 @@ def chart_occ_adr(df_yearly):
     ), secondary_y=True)
 
     fig.update_layout(
-        **PLOTLY_LAYOUT,
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+        font=dict(family="Noto Sans KR, sans-serif", size=12, color="#333"),
+        margin=dict(l=10, r=10, t=30, b=10),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font_size=11),
         height=260,
         yaxis=dict(title="점유율(%)", range=[70, 105], gridcolor="#F5F5F5"),
@@ -424,7 +430,10 @@ def chart_tambura_pnl(data_2025: list, data_2026: list):
     fig.add_hline(y=0, line_dash="solid", line_color="#CCCCCC", line_width=1)
 
     fig.update_layout(
-        **PLOTLY_LAYOUT,
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+        font=dict(family="Noto Sans KR, sans-serif", size=12, color="#333"),
+        margin=dict(l=10, r=10, t=30, b=10),
         barmode="group",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font_size=11),
         height=240,
@@ -490,7 +499,10 @@ def chart_tambura_rev(revenue: list, pax: list):
     ), secondary_y=True)
 
     fig.update_layout(
-        **PLOTLY_LAYOUT,
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+        font=dict(family="Noto Sans KR, sans-serif", size=12, color="#333"),
+        margin=dict(l=10, r=10, t=30, b=10),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font_size=11),
         height=220,
         yaxis=dict(title="백만원", gridcolor="#F5F5F5"),
@@ -730,7 +742,10 @@ def render_dashboard():
         hovertemplate="%{y}: %{x}명<extra></extra>"
     ))
     fig_staff.update_layout(
-        **PLOTLY_LAYOUT,
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+        font=dict(family="Noto Sans KR, sans-serif", size=12, color="#333"),
+        margin=dict(l=10, r=10, t=30, b=10),
         height=220,
         xaxis=dict(title="인원(명)", gridcolor="#F5F5F5", range=[0, 20]),
         yaxis=dict(gridcolor="rgba(0,0,0,0)"),
