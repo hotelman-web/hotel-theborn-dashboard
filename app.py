@@ -386,10 +386,14 @@ def chart_actual_vs_target(monthly_data: dict):
     ))
 
     fig.update_layout(
-        **PLOTLY_LAYOUT,
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+        font=dict(family="Noto Sans KR, sans-serif", size=12, color="#333"),
+        margin=dict(l=10, r=10, t=30, b=10),
         barmode="group",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font_size=11),
         height=240,
+        xaxis=dict(gridcolor="#F0F0F0", showgrid=False, linecolor="#E0E0E0"),
         yaxis=dict(title="억원", range=[3, 6], gridcolor="#F5F5F5"),
         hovermode="x unified",
     )
